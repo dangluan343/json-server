@@ -1,0 +1,39 @@
+@baseURL = http://localhost:3000/api
+
+@resourceName = categories
+
+################################
+
+# @name getAllcategories
+GET {{baseURL}}/{{resourceName}}?_page=1&_limit=20
+
+################################
+
+# @name addNewPost 
+POST {{baseURL}}/{{resourceName}}
+Content-Type: application/json
+
+{
+    "id": 2, 
+    "title": "post 2", 
+    "author": "luan"
+}
+
+################################
+
+# @name updateNewPost 
+PATCH {{baseURL}}/{{resourceName}}/2
+Content-Type: application/json
+
+{
+    
+    "title": "Post 2", 
+    "author": "luan"
+}
+
+################################
+
+
+# @name deleteNewPost 
+DELETE  {{baseURL}}/{{resourceName}}/2
+Content-Type: application/json

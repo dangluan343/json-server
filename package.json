@@ -1,0 +1,21 @@
+{
+  "name": "json-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run generate-data && node main.js",
+    "dev": "nodemon main.js",
+    "generate-data": "node generate-data.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^6.0.0",
+    "faker": "^6.6.6"
+  }
+}
